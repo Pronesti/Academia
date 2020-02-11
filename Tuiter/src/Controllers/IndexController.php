@@ -17,7 +17,7 @@ class IndexController implements \Tuiter\Interfaces\Controller {
                 $template->render(['name' => 'Dario'])
             );
             return $response;
-        })->add();
+        });
 
     }
 
