@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+{% for tuit in tuits %}
+        <div>{{ tuit.content }}</div>
+    {% endfor %}
+{% endblock %}

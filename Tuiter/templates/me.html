@@ -1,14 +1,10 @@
 {% extends "base.html" %}
-
 {% block content %}
 <form action='postTuit' method='POST'>
     <input type='text' name='content'>
     <input type='submit' value='post'>
 </form>
-
-{% for post in posts %}
-<div>{{ post.content }}</div>
-by <a href='/follow/{{post.userId}}'>{{post.userId}}</a>
-{% endfor %}
-
+{% for tuit in tuits %}
+        <div>{{ tuit.content }}</div>
+    {% endfor %}
 {% endblock %}
